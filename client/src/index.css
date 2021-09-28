@@ -1,9 +1,127 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Bungee+Outline&family=Bungee+Shade&family=Press+Start+2P&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+
+/* Custom properties ******************************************************************************************************/
+:root {
+  --ff-primary: "Cinzel", serif;
+  --ff-secondary: "IM Fell French Canon SC", serif;
+  --ff-title: 'Bungee Shade', cursive;
+  --ff-quextion: 'Press Start 2P', cursive;
+  --ff-answer: 'Bungee Outline', cursive;
+  --ff-ansHov: 'Bungee Hairline', cursive;
+
+  --fw-reg: 300;
+  --fw-bold: 800;
+
+  --clr-light: #ffffff;
+  --clr-dark: #303030;
+  --clr-accent: #1619e0;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15),
+    0.1em 0.1em 0.2em rgba(0, 0, 0, 0.1),
+    0.01em 0.01em 0.02em rgba(0, 0, 0, 0.01);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+/* custom scrollbar *************************************************************************/
+/* width */
+::-webkit-scrollbar {
+  width: 1.125em;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: var(--bs);
+  border-radius: 1em;
+}
+/* Track color */
+::-webkit-scrollbar-track-piece {
+  background: var(--clr-light);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--clr-dark);
+  border-radius: 1em;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-accent);
+}
+
+/* General styles **********************************************************************************************/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+img {
+  /* display: block; */
+  max-width: 100%;
+}
+
+strong {
+  font-weight: var(--fw-bold);
+}
+
+@media (max-width: 850px) {
+  strong {
+    font-size: var(--fs-h2);
+  }
+}
+
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
+/* Scroll Top */
+.scrollTop {
+  width: 100%;
+  margin: 0;
+  padding: 1.5em 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  opacity: 0.8;
+}
+
+.scrollTop:hover {
+  opacity: 0.6;
+}
+
+

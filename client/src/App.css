@@ -1,38 +1,39 @@
-.App {
+.title-section {
+  font-family: var(--ff-title);
   text-align: center;
+  align-items: center;
+  font-size: var(--fs-h3);
+  color: var(--clr-accent);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.question-count {
+  font-family: var(--ff-ansHov);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.question-text {
+  font-family: var(--ff-quextion);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.answer-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.answer-section button{
+  font-family: var(--ff-ansHov);
+  color: var(--clr-light);
+  background-color: var(--clr-accent);
+  padding: .5em;
+  margin: 1em;
+  border-radius: .2em;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.answer-section button:hover {
+  font-family: var(--ff-answer);
+  font-weight: 900;
+  color: var(--clr-accent);
+  border: .2em solid var(--clr-dark);
+  background-color: var(--clr-light);
+  padding: calc(.51em - .2em);
 }
