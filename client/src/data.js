@@ -1,4 +1,4 @@
-const questions = [
+const jsQuestions = [
     {
         questionText: "What is the description of charAt()?",
         answerOptions: [
@@ -227,4 +227,4 @@ const questions = [
 
 ]
 
-export default questions;
+export default jsQuestions;

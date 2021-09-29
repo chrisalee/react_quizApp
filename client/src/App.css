@@ -19,7 +19,7 @@
   flex-direction: column;
 }
 
-.answer-section button{
+.answer-section button {
   font-family: var(--ff-ansHov);
   color: var(--clr-light);
   background-color: var(--clr-accent);
@@ -35,5 +35,18 @@
   color: var(--clr-accent);
   border: .2em solid var(--clr-dark);
   background-color: var(--clr-light);
-  padding: calc(.51em - .2em);
+  padding: calc(.5em - .2em);
+}
+
+.score-section {
+  margin-top: 2rem;
+  text-align: center;
+  align-items: center;
+  border: .2em solid var(--clr-dark);
+  border-radius: 1.25em;
+  padding: 3em;
+  background-color: var(--clr-accent);
+  font-size: var(--fs-h2);
+  font-family: var(--ff-title);
+  color: var(--clr-light);
 }
